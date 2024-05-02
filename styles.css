@@ -32,3 +32,79 @@ table {
     font-weight: bold;
   }
  
+  .card {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 0;
+    box-sizing: border-box;
+    &::before {
+      content: "";
+      display: block;
+      background: linear-gradient(
+        90deg,
+        #1e5799 30%,
+        transparent 30%,
+        transparent 75%,
+        #1e5799 75%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      background-size: 40px;
+      position: absolute;
+      top: -1000px;
+      left: -50px;
+      bottom: -1000px;
+      right: -50px;
+      transform: rotate(45deg);
+    }
+    .content {
+      background: #1e5799;
+      height: 300px;
+    }
+  }
+  .its_me{
+    display: flex;
+    position: relative;
+    background-color: white;
+  }
+
+
+
+
+
+  .card img{
+    border-radius: 50%;
+    border: 3px dashed #1e5799;
+  }
+  .card .my_topic {
+    padding-left:  10%;
+    width: 100%;
+    background-image: linear-gradient(to right, white, #1e5799);
+  }
+  .toppic_story{
+    text-align: center;
+  }
+
+  .story{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 10% 0 10%;
+  }
+
+  
+
+  hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+  
+  hr::after {
+    background: #fff;
+    content: 'ᓚ₍ ^. .^₎';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+  }
